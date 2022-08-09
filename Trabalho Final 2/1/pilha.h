@@ -1,0 +1,11 @@
+typedef struct Pilha* pilha;
+pilha cria_pilha();
+int pilha_vazia(pilha p);
+int pilha_cheia(pilha p);
+int push(pilha p,int tipo,int elem,char hexa[33]);
+int pop(pilha p,int *tipo,int *elem,char hexa[33]);
+int le_topo(pilha p,int *elem,char hexa[33],int *tipo);
+int binario(pilha p,int decimal);
+int octal(pilha p,int decimal);
+int hexadecimal(pilha p,int decimal);
+int esvazia_pilha(pilha p);
